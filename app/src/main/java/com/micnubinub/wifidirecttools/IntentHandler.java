@@ -1,4 +1,4 @@
-package commicnubinub.wifidirecttools;
+package com.micnubinub.wifidirecttools;
 
 import android.app.IntentService;
 import android.content.Intent;

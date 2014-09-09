@@ -1,4 +1,4 @@
-package commicnubinub.wifidirecttools;
+package com.micnubinub.wifidirecttools;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
@@ -20,14 +20,36 @@ import java.util.Calendar;
 import java.util.List;
 
 /**
+ * Creapackage commicnubinub.wifidirecttools;
+
+ import android.app.AlarmManager;
+ import android.app.PendingIntent;
+ import android.content.Context;
+ import android.content.Intent;
+ import android.content.pm.PackageManager;
+ import android.content.pm.ResolveInfo;
+ import android.graphics.Bitmap;
+ import android.hardware.Camera;
+ import android.media.MediaRecorder;
+ import android.os.Environment;
+ import android.provider.Settings;
+ import android.view.KeyEvent;
+
+ import java.text.DateFormat;
+ import java.text.SimpleDateFormat;
+ import java.util.ArrayList;
+ import java.util.Calendar;
+ import java.util.List;
+
+ /**
  * Created by root on 29/07/14.
  */
-public class Tools {
+public class RemoteTools {
 
     public static Camera camera;
     private static Context context;
 
-    public Tools(Context c) {
+    public RemoteTools(Context c) {
         context = c;
     }
 
@@ -50,13 +72,13 @@ public class Tools {
     }
 
     public static void record(int time_secs, long when) {
-        AlarmManager alarmManager = getAlarmManager();
+      /*  AlarmManager alarmManager = getAlarmManager();
         Intent intent = new Intent(context(), Remote.class);
         intent.putExtra(StaticValues.SCHEDULED_RECORDING, time_secs);
         PendingIntent pendingIntent = PendingIntent.getService(context(), 0, intent, 0);
         alarmManager.set(AlarmManager.RTC_WAKEUP, System.currentTimeMillis() + (when * 60000), pendingIntent);
         context().startService(intent);
-
+*/
     }
 
     public static void spoofTouch(int x, int y) {
@@ -277,3 +299,4 @@ public class Tools {
     }
 
 }
+

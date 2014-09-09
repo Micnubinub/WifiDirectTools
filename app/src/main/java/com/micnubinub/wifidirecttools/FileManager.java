@@ -1,4 +1,4 @@
-package commicnubinub.wifidirecttools;
+package com.micnubinub.wifidirecttools;
 
 import android.content.Context;
 import android.content.Intent;
@@ -139,10 +139,10 @@ public class FileManager {
         try {
 
             print("   Name : " + file.getName());
-            print("   Size : " + Tools.fileSize(file.length()));
+            print("   Size : " + RemoteTools.fileSize(file.length()));
 
 
-            print("   Modified : " + Tools.getDate(file.lastModified()));
+            print("   Modified : " + RemoteTools.getDate(file.lastModified()));
 
 
         } catch (Exception e) {
