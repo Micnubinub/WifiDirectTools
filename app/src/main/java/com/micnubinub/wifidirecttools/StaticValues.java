@@ -42,13 +42,13 @@ public class StaticValues {
     public static final int MEDIA_CONTROL_SKIP = 30;
     public static final int MEDIA_CONTROL_PREVIOUS = 31;
     public static final int MEDIA_CONTROL_PLAY_PAUSE = 32;
-    public static final int  = 33;
+ /*   public static final int  = 33;
     public static final int  = 34;
     public static final int  = 35;
     public static final int  = 36;
     public static final int  = 37;
     public static final int  = 38;
     public static final int  = 39;
-    public static final int  = 40;
+    public static final int  = 40; */
 
 }
