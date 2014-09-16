@@ -17,7 +17,7 @@ public class StaticValues {
     public static final int PRESS_VOLUME_UP = 5;
     public static final int PRESS_VOLUME_DOWN = 6;
     public static final int GET_FILE_TREE = 7;
-    public static final int GET_FILE = 8;
+    public static final int OPEN_FILE = 8;
     public static final int RECORD_AUDIO = 9;
     public static final int TAKE_PICTURE_BACK = 10;
     public static final int TAKE_PICTURE_FRONT = 11;
@@ -42,7 +42,7 @@ public class StaticValues {
     public static final int MEDIA_CONTROL_SKIP = 30;
     public static final int MEDIA_CONTROL_PREVIOUS = 31;
     public static final int MEDIA_CONTROL_PLAY_PAUSE = 32;
- /*   public static final int  = 33;
+ /* public static final int  = 33;
     public static final int  = 34;
     public static final int  = 35;
     public static final int  = 36;

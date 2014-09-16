@@ -6,6 +6,7 @@ package com.micnubinub.wifidirecttools;
 public class WifiDirectThread extends Thread {
     boolean run = true;
 
+
     public WifiDirectThread(Runnable runnable) {
         super(runnable);
     }
@@ -13,10 +14,15 @@ public class WifiDirectThread extends Thread {
     @Override
     public void run() {
         super.run();
-        while (run){
+        while (run) {
 
 
+        }
+    }
 
+    public void stopThread() {
+        while (!isInterrupted()) {
+            this.interrupt();
         }
     }
 

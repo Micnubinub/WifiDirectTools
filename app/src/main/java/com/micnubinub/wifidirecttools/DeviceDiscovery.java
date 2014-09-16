@@ -7,7 +7,7 @@ import android.os.Bundle;
 /**
  * Created by root on 9/09/14.
  */
-public class DeviceDiscovery extends Activity{
+public class DeviceDiscovery extends Activity {
     @Override
     protected void onPostResume() {
         super.onPostResume();
@@ -21,7 +21,7 @@ public class DeviceDiscovery extends Activity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-     //   setContentView(R.layout.);
+        //   setContentView(R.layout.);
     }
 
     @Override
@@ -53,7 +53,6 @@ public class DeviceDiscovery extends Activity{
     protected void onDestroy() {
         super.onDestroy();
     }
-
 
 
 }

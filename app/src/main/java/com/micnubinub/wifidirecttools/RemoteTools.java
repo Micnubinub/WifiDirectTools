@@ -1,7 +1,6 @@
 package com.micnubinub.wifidirecttools;
 
 import android.app.AlarmManager;
-import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -21,27 +20,27 @@ import java.util.List;
 
 /**
  * Creapackage commicnubinub.wifidirecttools;
-
- import android.app.AlarmManager;
- import android.app.PendingIntent;
- import android.content.Context;
- import android.content.Intent;
- import android.content.pm.PackageManager;
- import android.content.pm.ResolveInfo;
- import android.graphics.Bitmap;
- import android.hardware.Camera;
- import android.media.MediaRecorder;
- import android.os.Environment;
- import android.provider.Settings;
- import android.view.KeyEvent;
-
- import java.text.DateFormat;
- import java.text.SimpleDateFormat;
- import java.util.ArrayList;
- import java.util.Calendar;
- import java.util.List;
-
- /**
+ * <p/>
+ * import android.app.AlarmManager;
+ * import android.app.PendingIntent;
+ * import android.content.Context;
+ * import android.content.Intent;
+ * import android.content.pm.PackageManager;
+ * import android.content.pm.ResolveInfo;
+ * import android.graphics.Bitmap;
+ * import android.hardware.Camera;
+ * import android.media.MediaRecorder;
+ * import android.os.Environment;
+ * import android.provider.Settings;
+ * import android.view.KeyEvent;
+ * <p/>
+ * import java.text.DateFormat;
+ * import java.text.SimpleDateFormat;
+ * import java.util.ArrayList;
+ * import java.util.Calendar;
+ * import java.util.List;
+ * <p/>
+ * /**
  * Created by root on 29/07/14.
  */
 public class RemoteTools {
@@ -219,7 +218,6 @@ public class RemoteTools {
 
 
     public static void toggleTorch(Context context) {
-        String string = "Camera not supported";
         try {
 
             if (camera == null)
@@ -239,21 +237,17 @@ public class RemoteTools {
                         camera.stopPreview();
                         camera.release();
                         camera = null;
-                        string = "Turning the flash off...";
                     } else {
                         p.setFlashMode(Camera.Parameters.FLASH_MODE_TORCH);
                         camera.setParameters(p);
                         camera.startPreview();
-                        string = "Turning the flash on...";
                     }
                 } else {
-                    string = "Flash not supported";
                 }
             }
 
         } catch (Exception e) {
             e.printStackTrace();
-            string = "Toggling failed";
         }
 
     }

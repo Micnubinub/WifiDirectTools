@@ -1,12 +1,13 @@
 package com.micnubinub.wifidirecttools;
 
 import android.app.Activity;
+import android.net.wifi.p2p.WifiP2pManager;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity implements WifiP2pManager.ChannelListener, DeviceActionListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,5 +33,10 @@ public class MainActivity extends Activity {
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onChannelDisconnected() {
+
     }
 }
